@@ -34,7 +34,7 @@ type Recorder interface {
 	GetReadWriteID(areaID RecArea) (rid, wid int)
 }
 
-
+```
 func main() {
   var recApi dbmod.Recorder
   //每次必须先打开存储区
@@ -62,3 +62,4 @@ func main() {
 	num := recApi.GetNoUploadNum(dbmod.RecArea01)
 	fmt.Printf("GetNoUploadNum:%d\n", num)
 }
+```
