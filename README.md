@@ -1,7 +1,10 @@
 # dbmod
 Encapsulation of operation leveldB records, a Implementation of queue。
+
 按队列顺序操作leveldb记录存储模块的封装。
+
 封装完成后的leveldb的记录存储操作多么的简单，且是一个持久化的队列的实现，只需以下接口：
+
 // Recorder 操作记录的接口声明
 type Recorder interface {
 	// 初始化记录区(会清空所有数据!)
